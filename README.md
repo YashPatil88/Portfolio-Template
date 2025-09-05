@@ -6,7 +6,7 @@ This file contains the template link and simple instructions to help you get sta
 
 How to Use Your Template
 Open the Link: To access your template, please click on the following GitHub repository link:
-[INSERT YOUR GITHUB REPOSITORY LINK HERE]
+[https://github.com/YashPatil88/Portfolio-Template]
 
 Download the Template: On the repository page, click the green <> Code button and then select Download ZIP. This will download a compressed folder containing all the template files to your computer.
 
