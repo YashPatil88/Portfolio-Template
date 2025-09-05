@@ -1,0 +1,280 @@
+/* Google Fonts */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Floating Background Shapes */
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+}
+.shape1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  left: -100px;
+}
+.shape2 {
+  width: 400px;
+  height: 400px;
+  bottom: -150px;
+  right: -150px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-weight: 700;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00ffcc;
+}
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 80px 10%;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 260px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.highlight {
+  color: #00ffcc;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+.btn {
+  display: inline-block;
+  background: #00ffcc;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #fff;
+}
+.hero-photo img {
+  width: 300px;
+  border-radius: 50%;
+  border: 6px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Section Base */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* About Section */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+.about-photo img {
+  width: 250px;
+  border-radius: 20px;
+}
+.about-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.skill-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.skill-card:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+/* Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.service-card:hover {
+  background: #00ffcc;
+  color: #000;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.project-card:hover .overlay {
+  opacity: 1;
+}
+.overlay h3 {
+  color: #00ffcc;
+  font-size: 1.5rem;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.contact-form button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #00ffcc;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 0.9rem;
+}
+
+/* Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .burger {
+    display: block;
+  }
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
